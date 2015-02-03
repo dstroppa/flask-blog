@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-    Flaskr
+    flask-blog
     ~~~~~~
 
     A microblog example application written as Flask tutorial with
     Flask and sqlite3.
 
-    :copyright: (c) 2015 by Armin Ronacher.
-    :license: BSD, see LICENSE for more details.
+    :copyright: (c) 2015 by Amazon Web Services.
+    :license: Apache 2.0, see LICENSE for more details.
 """
 
 import os
@@ -21,13 +21,13 @@ app = Flask(__name__)
 
 # Load default config and override config from an environment variable
 app.config.update(dict(
-    DATABASE=os.path.join(app.root_path, 'flaskr.db'),
+    DATABASE=os.path.join(app.root_path, 'flask-blog.db'),
     DEBUG=True,
     SECRET_KEY='development key',
     USERNAME='admin',
     PASSWORD='default'
 ))
-app.config.from_envvar('FLASKR_SETTINGS', silent=True)
+app.config.from_envvar('FLASK_BLOG_SETTINGS', silent=True)
 
 
 def connect_db():
