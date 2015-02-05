@@ -1,2 +1,2 @@
 FROM python:2-onbuild
-CMD [ "python", "./flask-blog.py" ]
+CMD [ "python", "./flask_blog.py" ]
