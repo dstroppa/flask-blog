@@ -17,8 +17,3 @@
       2. now you can run the flask_blog.py file with your
          python interpreter and the application will
          greet you on http://localhost:5000/
-	
-    ~ Is it tested?
-
-      You betcha.  Run the `test_flask_blog.py` file to see
-      the tests pass.
