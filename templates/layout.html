@@ -1,13 +1,13 @@
 <!doctype html>
-<title>Flask-blog</title>
+<title>Amazon EC2 Container Service Demo</title>
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 <div class="page">
-  <h1>Flask-blog</h1>
+  <h1>Amazon EC2 Container Service Demo Blog</h1>
   <div class="metanav">
   {% if not session.logged_in %}
-    <a href="{{ url_for('login') }}">log in</a>
+    <a href="{{ url_for('login') }}">Login</a>
   {% else %}
-    <a href="{{ url_for('logout') }}">log out</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
   {% endif %}
   </div>
   {% for message in get_flashed_messages() %}
